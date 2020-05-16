@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jailson Jhonatas</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quantico&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/717388d649.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+            <ul class="container">
+                <li><a href="#sobre" class="container">Sobre</a></li>
+                <li><a href="#portfolio" class="container">Portfólio</a></li>
+                <li><a href="#contato" class="container">Contato</a></li>
             </ul>
         </nav>
-        <h1 class="site-title">Jailson Jhonatas</h1>
-        <h2 class="site-subtitle">jr Web developer</h2>
+        <div class="titulo">
+            <h1 class="site-title">Jailson Jhonatas</h1>
+            <h2 class="site-subtitle">jr Web developer</h2>
 
-
-    
+        </div>
     </header>
-    
-    <body>
-        
-    
-    </body>
-    <footer>
+    <section class="sobre" id="sobre">
+        <h2>Sobre</h2>
+        <figure class="avatar">
+            <img src="./img/perfil.jpg" alt="Jailson Jhonatas">
+        </figure>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus delectus doloremque illum, vero ratione ex expedita. Est at neque porro suscipit veritatis doloremque optio blanditiis. Perspiciatis nobis at adipisci.
+        </p>
+        <p>
+            A officia deleniti ut quam voluptatum excepturi nisi nam id quaerat, quos totam. Rerum inventore iure fugit ipsum similique vero, possimus nobis ex excepturi optio. Nostrum incidunt magni maxime odio!
+            Doloremque optio quidem eaque ad rerum odit, itaque vero aliquid, velit ipsum a reiciendis, blanditiis cumque mollitia? Corrupti consequatur nulla ullam cumque vero cupiditate ex dolorum aperiam? Vero, dolorum repellat.
+        </p>
+        <p>
+            Esse site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> Sou Muito grato de verdade! e Amo acompanhá-los! 🤓✨💗
+        </p>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2>Hobbys</h2>
+        <div class="grid">
+            <figure>
+                <a href="https://github.com/jailsonjhonatas" target="_blank">
+                    <img class="img-portfolio" src="./img/Projetospessoais.png" alt="Projetos-Pessoais">
+                    <figcaption>Projetos pessoais</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://www.hackaflag.com.br" target="_blank">
+                    <img class="img-portfolio" src="./img/hackaflag.jpg" alt="Hackaflag">
+                    <figcaption>Hackaflag</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://roadsec.com.br/" target="_blank">
+                    <img class="img-portfolio" src="./img/roadsec.png" alt="RoadSec">
+                    <figcaption>RoadSec</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="https://picoctf.com/" target="_blank">
+                    <img class="img-portfolio" src="./img/picoctf.png" alt="picoCTF">
+                    <figcaption>picoCTF</figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+            <a href="https://github.com/jailsonjhonatas" target="_blank" id="github">
+                <i class="fab fa-github-square" id="github"></i>
+            </a>
 
-    </footer>
+            <a href="https://www.linkedin.com/in/jailson-jhonatas" target="_blank" id="linkedin">
+                <i class="fab fa-linkedin" id="linkedin"></i>
+            </a>
 
-    <script>
+            <a href="https://www.instagram.com/jailsonjhonatass/" target="_blank" id="instagram">
+                <i class="fab fa-instagram-square" id="instagram"></i>
+            </a>
 
-    </script>
+            <a href="https://www.youtube.com/channel/UCFqPV5ovHiJ_cpSGg14a6zw?view_as=subscriber" target="_blank" id="youtube">
+                <i class="fab fa-youtube-square" id="youtube"></i>
+            </a>
+        </div>
+
+    </section>
 </body>
+
 </html>
