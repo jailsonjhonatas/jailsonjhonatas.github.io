@@ -1,214 +1,25 @@
-* { /* RESET do CSS */
+* {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #f9f9f9;
-    font-family: 'Source Code Pro', monospace;
-    background-size: auto 100vh; /* manter proporção ideal */
-    height: 100vh;
-    font-size: 10px;
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #fdfdfd;
 }
 
-/* se a tela tiver pelo menos 400px vai carregar estes estilos do @media */
-@media (min-widht: 400px){
-    body{
-        font-size: 14px;
-    }
-}
-/* breakpoint */
-@media (min-widht: 600px){
-    body{
-        font-size: 18px;
-    }
+img {
+    /* inherit: indica para o elemento filho
+    que ele deve utilizar o mesmo valor presente
+    no elemento pai */
 }
 
-header{
-    height: 100vh;
+.menu__navegacao {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a{
-    color: 
-    rgb(84, 68, 148);
-    font-size: 20px;
-    text-decoration: none;
-}
-a:hover{
-    font-size: 30px;
-    text-decoration: underline;
-}
-.menu a{
-    padding: 10px 20px;
-    display: block;
-    transition: 2s;
-}
-
-.menu a:hover{
-    background-color: rgb(117, 93, 197);
-    color: rgb(30, 30, 29);
-    transform: rotate(-2deg);
-}
-
-.menu{
-    position: fixed;
     width: 100vw;
-    top: 0;
-    z-index: 1;
-}
-
-.menu ul{
-    background-color: rgb(30, 30, 29);
-    display: flex;
+    padding: 1rem 1.6rem;
     justify-content: space-around;
-}
-.menu li{
-    list-style: none;
-    font-family: 'Quantico', sans-serif;
-}
-
-.titulo{
-    transform: scale(0.2) translateY(50vh);
-    opacity: 0;
-    animation: ease-in-out 2s animacaoTitulo forwards;
-}
-
-@keyframes animacaoTitulo{
-    from{
-        transform: scale(0.2) translateY(50vh);
-        opacity: 0;
-    }
-    to{
-        transform: scale(1) translateY(0);
-        opacity: 1;
-    }
-}
-
-.sobre,
-.contato,
-.portfolio{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.0em;
-    padding: 2em;
-    min-height: 100vh;
-}
-
-
-.sobre h2,
-.contato h2,
-.portfolio h2{
-    margin-bottom: 1.3em;
-    font-size: 1.6em;
-}
-
-.sobre p{
-    text-indent: 2em;
-    margin-bottom: 1.4em;/* distanciamento de parágrafo */
-    text-align: justify;
-}
-
-.sobre a:hover{
-    text-decoration: none;
-}
-
-.avatar{
-    float: right;
-    margin-left: 2em;
-}
-
-.avatar img{
-    border-radius: 50%;
-    border: solid rgb(70, 34, 189) 6px ;
-}
-
-.avatar img:hover{
-    box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
-}
-
-.site-subtitle,
-.site-title{
-    color: rgb(92, 68, 148);
-    text-align: center;
-}
-
-.site-title{
-    font-size: 5em;
-}
-
-.site-subtitle{
-    color: rgb(30, 30, 29);
-    font-style: italic;
-    font-size: 2em;
-}
-
-.portfolio .grid{
-    display: grid;
-    gap: 2em;
-}
-/* quebrar em duas colunas apartir de 560px de tela */
-@media (min-width: 560px){
-    .portfolio .grid{
-        grid-template-columns: 240px 240px;
-    }    
-}
-/* quebrar em três colunas apartir de 880px de tela */
-@media (min-width: 880px){
-    .portfolio .grid{
-        grid-template-columns: repeat(3, 240px);
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        height: calc(100vh - 8em - 48px);
-        
-    }    
-}
-
-.portfolio figure{
-    text-align: center;
-}
-
-.img-portfolio{
-    width: 240px;
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 13px;
-    transition: 500ms;
-}
-
-.img-portfolio:hover{
-    transform: scale(1.2);
-    
-}
-
-.contato .icons{
-    text-align: center;
-}
-
-.contato a {
-    font-size: 4em;
-    transition: text-shadow 1s;
-}
-
-.contato a:active,
-.contato a:hover{
-    text-decoration: none;
-    text-shadow: 0px 0px 10px black;
-}
-
-#github{
-    color: #24292e;
-}
-#linkedin{
-    color: #0077b5;
-}
-#instagram{
-    color: #cd07ff;
-}
-#youtube{
-    color: #c4302b;
+    align-items: center;
+    /* position: fixed; */
+    background-color: whitesmoke;
 }
