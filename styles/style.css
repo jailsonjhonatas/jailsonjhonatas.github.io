@@ -1,17 +1,49 @@
 * {
+    padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Ubuntu Mono', monospace;
-    background-color: #fdfdfd;
+    font-family: 'Righteous', monospace;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header div .menu__navegacao {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header div a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header div a:hover {
+    color: #8a2be2;
+    font-size: 25px;
+    transition: color 500ms;
+}
+
+.banner {
+    margin: 100px 100px;
+    text-align: center;
 }
 
 img {
     /* inherit: indica para o elemento filho
     que ele deve utilizar o mesmo valor presente
     no elemento pai */
+    width: 300px;
+    height: 300px;
 }
 
 .menu__navegacao {
@@ -21,5 +53,4 @@ img {
     justify-content: space-around;
     align-items: center;
     /* position: fixed; */
-    background-color: whitesmoke;
 }
