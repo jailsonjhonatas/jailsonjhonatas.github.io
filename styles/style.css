@@ -33,6 +33,10 @@ header div a:hover {
     transition: color 500ms;
 }
 
+section {
+    margin: 150px;
+}
+
 .banner {
     margin: 100px 100px;
     text-align: center;
@@ -53,4 +57,10 @@ img {
     justify-content: space-around;
     align-items: center;
     /* position: fixed; */
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
