@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Righteous&display=swap";
 * {
     padding: 0;
     margin: 0;
@@ -12,6 +13,7 @@ body {
 }
 
 header {
+    display: flex;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -38,16 +40,23 @@ section {
 }
 
 .banner {
-    margin: 100px 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 100px;
     text-align: center;
 }
 
-img {
-    /* inherit: indica para o elemento filho
-    que ele deve utilizar o mesmo valor presente
-    no elemento pai */
+.banner a {
+    color: #8a2be2;
+    text-decoration: line-through;
+}
+
+.banner img {
     width: 300px;
     height: 300px;
+    border-radius: 50%;
+    border: #8a2be2 solid 2px;
+    padding: 1px;
+    margin: 20px;
 }
 
 .menu__navegacao {
@@ -57,6 +66,17 @@ img {
     justify-content: space-around;
     align-items: center;
     /* position: fixed; */
+}
+
+.sobre {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.contato {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 footer p {
