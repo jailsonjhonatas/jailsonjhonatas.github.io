@@ -45,6 +45,11 @@ h3 a:hover {
     transition: 200ms;
 }
 
+.titulo {
+    font-size: 40px;
+    padding: 20px 0px;
+}
+
 .liks nav a {
     background-color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
@@ -104,10 +109,14 @@ h3 a:hover {
 }
 
 .skills {
+    background-color: var(--color-background);
+}
+
+.skills ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .skills ul li img {
