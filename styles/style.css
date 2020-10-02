@@ -103,6 +103,18 @@ h3 a:hover {
     /* position: fixed; */
 }
 
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills ul li img {
+    width: 100px;
+    height: 100px;
+}
+
 .sobre {
     background-color: var(--color-black);
     padding: 20px;
@@ -121,6 +133,11 @@ h3 a:hover {
     background-color: var(--color-black);
     max-width: 700px;
     margin: 0 auto;
+}
+
+.links article img {
+    width: 50px;
+    height: 50px;
 }
 
 footer p {
