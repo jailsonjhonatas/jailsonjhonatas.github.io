@@ -46,6 +46,9 @@ h3 a:hover {
 }
 
 .titulo {
+    display: inline-block;
+    align-items: center;
+    margin: 0 auto;
     font-size: 40px;
     padding: 20px 0px;
 }
@@ -108,20 +111,32 @@ h3 a:hover {
     /* position: fixed; */
 }
 
-.skills {
-    background-color: var(--color-background);
-}
 
-.skills ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* === CARDS === */
+
+.cards {
+    max-width: 700px;
     margin: 0 auto;
+    background-color: var(--color-black);
+    /* alinha ao meio */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.skills ul li img {
-    width: 100px;
+.card__image-container img {
     height: 100px;
+    width: 100%;
+}
+
+.card__title {
+    background-color: var(--color-background);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .sobre {
@@ -144,9 +159,15 @@ h3 a:hover {
     margin: 0 auto;
 }
 
+.links article {
+    padding: 20px;
+    margin: 20px;
+}
+
 .links article img {
     width: 50px;
     height: 50px;
+    margin-right: 15px;
 }
 
 footer p {
