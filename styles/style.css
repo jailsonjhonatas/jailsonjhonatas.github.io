@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600&display=swap');
+:root {
+    --color-purple: #8a2be2;
+    --color-background: rgba(0, 0, 0, 0.8);
+    --color-black: rgba(0, 0, 0, 0.3);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,44 +13,93 @@
 }
 
 body {
-    font-family: 'Righteous', monospace;
-    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Teko', sans-serif;
+    background-color: var(--color-background);
     color: whitesmoke;
 }
 
 header {
+    display: flex;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--color-background);
 }
 
-header div .menu__navegacao {
-    background-color: rgba(0, 0, 0, 0.5);
+header a {
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
 }
 
-header div a {
+header a:hover {
+    transition: color 600ms;
+}
+
+a {
     color: whitesmoke;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    font-size: 28px;
+    transition: 200ms;
+}
+
+.titulo {
+    display: inline-block;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    padding: 20px 0px;
+}
+
+.liks nav a {
+    background-color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-header div a:hover {
-    color: #8a2be2;
+.links a:hover {
+    color: var(--color-purple);
     font-size: 25px;
     transition: color 500ms;
 }
 
 .banner {
-    margin: 100px 100px;
+    background-color: var(--color-black);
     text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
-img {
-    /* inherit: indica para o elemento filho
-    que ele deve utilizar o mesmo valor presente
-    no elemento pai */
+.banner a {
+    color: var(--color-purple);
+    text-decoration: line-through;
+}
+
+.banner img {
     width: 300px;
     height: 300px;
+    border-radius: 50%;
+    border: var(--color-purple) solid 2px;
+    padding: 1px;
+    margin: 20px;
+}
+
+.banner h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.banner h2 {
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
 }
 
 .menu__navegacao {
@@ -53,4 +109,69 @@ img {
     justify-content: space-around;
     align-items: center;
     /* position: fixed; */
+}
+
+
+/* === CARDS === */
+
+.cards {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--color-black);
+    /* alinha ao meio */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card__image-container img {
+    height: 100px;
+    width: 100%;
+}
+
+.card__title {
+    background-color: var(--color-background);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sobre {
+    background-color: var(--color-black);
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sobre p {
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.contato {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--color-black);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.links article {
+    padding: 20px;
+    margin: 20px;
+}
+
+.links article img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
