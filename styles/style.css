@@ -9,18 +9,23 @@
     padding: 0;
     margin: 0;
     border: 0;
-    box-sizing: border-box;
 }
 
+html,
 body {
+    box-sizing: border-box;
     font-family: 'Teko', sans-serif;
     background-color: var(--color-background);
     color: whitesmoke;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
     display: flex;
     padding: 20px;
+    margin: 0 auto;
     background-color: var(--color-background);
 }
 
@@ -75,6 +80,10 @@ h3 a:hover {
     max-width: 700px;
 }
 
+.banner h1 {
+    margin-top: 84px;
+}
+
 .banner a {
     color: var(--color-purple);
     text-decoration: line-through;
@@ -119,10 +128,13 @@ h3 a:hover {
     margin: 0 auto;
     background-color: var(--color-black);
     /* alinha ao meio */
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
 }
 
 .card__image-container img {
@@ -134,7 +146,7 @@ h3 a:hover {
     background-color: var(--color-background);
     filter: brightness(90%);
     padding: 5px 20px;
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 20px;
     text-align: center;
 }
@@ -144,6 +156,8 @@ h3 a:hover {
     padding: 20px;
     max-width: 700px;
     margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
 }
 
 .sobre p {
@@ -153,10 +167,13 @@ h3 a:hover {
 
 .contato {
     text-align: center;
-    padding: 50px;
+    justify-content: center;
     background-color: var(--color-black);
     max-width: 700px;
     margin: 0 auto;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .links article {
@@ -171,6 +188,7 @@ h3 a:hover {
 }
 
 footer p {
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
